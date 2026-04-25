@@ -6,8 +6,7 @@ import {
 import { TanStackRouterDevtoolsPanel } from "@tanstack/react-router-devtools";
 import { TanStackDevtools } from "@tanstack/react-devtools";
 
-import ClerkProvider from "../integrations/clerk/provider";
-
+import { ClerkProvider } from "@clerk/tanstack-react-start";
 import TanStackQueryDevtools from "../integrations/tanstack-query/devtools";
 
 import appCss from "../styles.css?url";
@@ -15,7 +14,7 @@ import appCss from "../styles.css?url";
 import type { QueryClient } from "@tanstack/react-query";
 import Navbar from "#/components/Navbar.tsx";
 import Crosshair from "#/components/Crosshair.tsx";
-import { ThemeProvider } from "#/components/theme-provider.tsx";
+import { ThemeProvider } from "#/components/theming/theme-provider.tsx";
 
 interface MyRouterContext {
   queryClient: QueryClient;
@@ -52,7 +51,7 @@ export const Route = createRootRouteWithContext<MyRouterContext>()({
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
         <HeadContent />
       </head>
