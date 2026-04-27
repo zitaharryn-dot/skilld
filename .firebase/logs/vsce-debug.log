@@ -1,0 +1,342 @@
+[debug] [2026-04-27T11:46:55.326Z] [Firebase Plugin] Activating Firebase extension.
+[debug] [2026-04-27T11:46:57.346Z] [Firebase Plugin] requireAuthWrapper
+[debug] [2026-04-27T11:46:57.351Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-04-27T11:46:57.353Z] > authorizing via signed-in user (zitaharryn@gmail.com)
+[debug] [2026-04-27T11:46:57.366Z] Checked if tokens are valid: true, expires at: 1777293833544
+[debug] [2026-04-27T11:46:57.368Z] Checked if tokens are valid: true, expires at: 1777293833544
+[debug] [2026-04-27T11:46:57.370Z] [Firebase Plugin] User found:  zitaharryn@gmail.com
+[info] [Firebase Plugin] (Core:Project) New user detected, fetching projects
+[debug] [2026-04-27T11:46:57.377Z] Checked if tokens are valid: true, expires at: 1777293833544
+[debug] [2026-04-27T11:46:57.383Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2026-04-27T11:46:57.401Z] [Firebase Plugin] VSCode notification server listening on port 40001
+[info] [Firebase Plugin] Starting SQL Connect toolkit (version 3.4.5) on port 50001
+[debug] [2026-04-27T11:46:58.099Z] I0427 14:46:58.090713   32559 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 2b98] UpdateResources(): done
+Main schema: sources: schema/schema.gql [0B] 
+Connector "example": sources: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:46:58.090713   32559 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 2b98] UpdateResources(): done\nMain schema: sources: schema/schema.gql [0B] \nConnector \"example\": sources: \n"}}
+[debug] [2026-04-27T11:46:58.102Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2026-04-27T11:46:58.105Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"dataconnect"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2026-04-27T11:46:58.107Z] Starting SQL Connect Emulator with command {"binary":"/home/harry/.cache/firebase/emulators/dataconnect-emulator-3.4.5","args":["--logtostderr","-v=2","dev","--listen=localhost:50001","--config_dir=/home/harry/WebstormProjects/skilld/skilld/dataconnect","--enable_output_schema_extensions=true","--enable_output_generated_sdk=true"],"optionalArgs":["listen","config_dir","enable_output_schema_extensions","enable_output_generated_sdk"],"joinArgs":true,"shell":false,"port":9399} {"metadata":{"emulator":{"name":"dataconnect"},"message":"Starting SQL Connect Emulator with command {\"binary\":\"/home/harry/.cache/firebase/emulators/dataconnect-emulator-3.4.5\",\"args\":[\"--logtostderr\",\"-v=2\",\"dev\",\"--listen=localhost:50001\",\"--config_dir=/home/harry/WebstormProjects/skilld/skilld/dataconnect\",\"--enable_output_schema_extensions=true\",\"--enable_output_generated_sdk=true\"],\"optionalArgs\":[\"listen\",\"config_dir\",\"enable_output_schema_extensions\",\"enable_output_generated_sdk\"],\"joinArgs\":true,\"shell\":false,\"port\":9399}"}}
+[info] i  dataconnect: SQL Connect Emulator logging to dataconnect-debug.log {"metadata":{"emulator":{"name":"dataconnect"},"message":"SQL Connect Emulator logging to dataconnect-debug.log"}}
+[debug] [2026-04-27T11:46:58.191Z] I0427 14:46:58.152480   32566 load.go:31] Reloading schema and connectors...
+I0427 14:46:58.159245   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service a80e] UpdateResources(): done
+Main schema: sources: schema/schema.gql [0B] 
+Connector "example": sources: 
+E0427 14:46:58.169585   32566 load.go:95] Errors generating SDK: [connector "example"]: invalid Data Connect Connector no query found in connector
+I0427 14:46:58.170342   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [82799B] 
+I0427 14:46:58.170425   32566 load.go:109] Finished reloading
+I0427 14:46:58.171296   32566 dev.go:104] Listening on address (HTTP + gRPC): 127.0.0.1:50001
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:46:58.152480   32566 load.go:31] Reloading schema and connectors...\nI0427 14:46:58.159245   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service a80e] UpdateResources(): done\nMain schema: sources: schema/schema.gql [0B] \nConnector \"example\": sources: \nE0427 14:46:58.169585   32566 load.go:95] Errors generating SDK: [connector \"example\"]: invalid Data Connect Connector no query found in connector\nI0427 14:46:58.170342   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [82799B] \nI0427 14:46:58.170425   32566 load.go:109] Finished reloading\nI0427 14:46:58.171296   32566 dev.go:104] Listening on address (HTTP + gRPC): 127.0.0.1:50001\n"}}
+[debug] [2026-04-27T11:46:58.488Z] I0427 14:46:58.485389   32566 engine.go:209] [projects/emulator/locations/emulator/services/skilld-6f651-service a80e] ExecuteGraphqlRead query IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:46:58.485389   32566 engine.go:209] [projects/emulator/locations/emulator/services/skilld-6f651-service a80e] ExecuteGraphqlRead query IntrospectionQuery: succeeded. \n"}}
+[debug] [2026-04-27T11:46:58.986Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2026-04-27T11:46:58.987Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2026-04-27T11:48:48.181Z] I0427 14:48:48.180863   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:48:48.180863   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:48:48.184Z] E0427 14:48:48.184643   32566 load.go:73] Could not load sources: 
+Errors: schema/schema.gql:2:6: OBJECT User: must define one or more fields.
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:48:48.184643   32566 load.go:73] Could not load sources: \nErrors: schema/schema.gql:2:6: OBJECT User: must define one or more fields.\n"}}
+[debug] [2026-04-27T11:48:48.188Z] I0427 14:48:48.187083   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [82799B] 
+I0427 14:48:48.187171   32566 load.go:74] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:48:48.187083   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [82799B] \nI0427 14:48:48.187171   32566 load.go:74] Finished reloading\n"}}
+[debug] [2026-04-27T11:50:08.180Z] I0427 14:50:08.180606   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:50:08.180606   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:50:08.184Z] E0427 14:50:08.183911   32566 load.go:73] Could not load sources: 
+Errors: schema/schema.gql:2:6: OBJECT User: must define one or more fields.
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:50:08.183911   32566 load.go:73] Could not load sources: \nErrors: schema/schema.gql:2:6: OBJECT User: must define one or more fields.\n"}}
+[debug] [2026-04-27T11:50:08.187Z] I0427 14:50:08.185381   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [82799B] 
+I0427 14:50:08.185452   32566 load.go:74] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:50:08.185381   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [82799B] \nI0427 14:50:08.185452   32566 load.go:74] Finished reloading\n"}}
+[debug] [2026-04-27T11:50:18.180Z] I0427 14:50:18.180631   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:50:18.180631   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:50:18.185Z] E0427 14:50:18.184967   32566 load.go:73] Could not load sources: 
+Errors: schema/schema.gql:2:6: OBJECT User: must define one or more fields.
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:50:18.184967   32566 load.go:73] Could not load sources: \nErrors: schema/schema.gql:2:6: OBJECT User: must define one or more fields.\n"}}
+[debug] [2026-04-27T11:50:18.187Z] I0427 14:50:18.186030   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [82799B] 
+I0427 14:50:18.186068   32566 load.go:74] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:50:18.186030   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [82799B] \nI0427 14:50:18.186068   32566 load.go:74] Finished reloading\n"}}
+[debug] [2026-04-27T11:50:28.172Z] I0427 14:50:28.172178   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:50:28.172178   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:50:28.178Z] E0427 14:50:28.178390   32566 load.go:73] Could not load sources: 
+Errors: schema/schema.gql:4:1: expected at least one definition, found }
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:50:28.178390   32566 load.go:73] Could not load sources: \nErrors: schema/schema.gql:4:1: expected at least one definition, found }\n"}}
+[debug] [2026-04-27T11:50:28.181Z] I0427 14:50:28.179538   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [82799B] 
+I0427 14:50:28.179603   32566 load.go:74] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:50:28.179538   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [82799B] \nI0427 14:50:28.179603   32566 load.go:74] Finished reloading\n"}}
+[debug] [2026-04-27T11:50:38.174Z] I0427 14:50:38.174220   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:50:38.174220   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:50:38.181Z] I0427 14:50:38.180807   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 8e5c] UpdateResources(): done
+Main schema: sources: schema/schema.gql [81B] 
+Connector "example": sources: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:50:38.180807   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 8e5c] UpdateResources(): done\nMain schema: sources: schema/schema.gql [81B] \nConnector \"example\": sources: \n"}}
+[debug] [2026-04-27T11:50:38.188Z] E0427 14:50:38.188420   32566 load.go:95] Errors generating SDK: [connector "example"]: invalid Data Connect Connector no query found in connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:50:38.188420   32566 load.go:95] Errors generating SDK: [connector \"example\"]: invalid Data Connect Connector no query found in connector\n"}}
+[debug] [2026-04-27T11:50:38.191Z] I0427 14:50:38.190990   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: main/relation.gql [851B] main/query.gql [1175B] prelude.gql [82799B] main/mutation.gql [3149B] main/input.gql [3613B] 
+I0427 14:50:38.191046   32566 load.go:109] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:50:38.190990   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: main/relation.gql [851B] main/query.gql [1175B] prelude.gql [82799B] main/mutation.gql [3149B] main/input.gql [3613B] \nI0427 14:50:38.191046   32566 load.go:109] Finished reloading\n"}}
+[debug] [2026-04-27T11:50:48.176Z] I0427 14:50:48.175871   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:50:48.175871   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:50:48.179Z] E0427 14:50:48.178812   32566 load.go:73] Could not load sources: 
+Errors: schema/schema.gql:5:1: Expected Name, found }
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:50:48.178812   32566 load.go:73] Could not load sources: \nErrors: schema/schema.gql:5:1: Expected Name, found }\n"}}
+[debug] [2026-04-27T11:50:48.182Z] I0427 14:50:48.180773   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [82799B] main/input.gql [3613B] main/relation.gql [851B] main/query.gql [1175B] main/mutation.gql [3149B] 
+I0427 14:50:48.180841   32566 load.go:74] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:50:48.180773   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [82799B] main/input.gql [3613B] main/relation.gql [851B] main/query.gql [1175B] main/mutation.gql [3149B] \nI0427 14:50:48.180841   32566 load.go:74] Finished reloading\n"}}
+[debug] [2026-04-27T11:50:58.171Z] I0427 14:50:58.171782   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:50:58.171782   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:50:58.179Z] I0427 14:50:58.179300   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service a023] UpdateResources(): done
+Main schema: sources: schema/schema.gql [126B] 
+Connector "example": sources: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:50:58.179300   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service a023] UpdateResources(): done\nMain schema: sources: schema/schema.gql [126B] \nConnector \"example\": sources: \n"}}
+[debug] [2026-04-27T11:50:58.185Z] E0427 14:50:58.185751   32566 load.go:95] Errors generating SDK: [connector "example"]: invalid Data Connect Connector no query found in connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:50:58.185751   32566 load.go:95] Errors generating SDK: [connector \"example\"]: invalid Data Connect Connector no query found in connector\n"}}
+[debug] [2026-04-27T11:50:58.188Z] I0427 14:50:58.187691   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: main/relation.gql [1582B] prelude.gql [82799B] main/query.gql [1175B] main/mutation.gql [3149B] main/input.gql [4958B] 
+I0427 14:50:58.187743   32566 load.go:109] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:50:58.187691   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: main/relation.gql [1582B] prelude.gql [82799B] main/query.gql [1175B] main/mutation.gql [3149B] main/input.gql [4958B] \nI0427 14:50:58.187743   32566 load.go:109] Finished reloading\n"}}
+[debug] [2026-04-27T11:51:08.182Z] I0427 14:51:08.180000   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:51:08.180000   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:51:08.191Z] I0427 14:51:08.191124   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 1e27] UpdateResources(): done
+Main schema: sources: schema/schema.gql [144B] 
+Connector "example": sources: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:51:08.191124   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 1e27] UpdateResources(): done\nMain schema: sources: schema/schema.gql [144B] \nConnector \"example\": sources: \n"}}
+[debug] [2026-04-27T11:51:08.199Z] E0427 14:51:08.199109   32566 load.go:95] Errors generating SDK: [connector "example"]: invalid Data Connect Connector no query found in connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:51:08.199109   32566 load.go:95] Errors generating SDK: [connector \"example\"]: invalid Data Connect Connector no query found in connector\n"}}
+[debug] [2026-04-27T11:51:08.202Z] I0427 14:51:08.201542   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: main/query.gql [1175B] main/mutation.gql [3149B] prelude.gql [82799B] main/input.gql [5648B] main/relation.gql [1952B] 
+I0427 14:51:08.201609   32566 load.go:109] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:51:08.201542   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: main/query.gql [1175B] main/mutation.gql [3149B] prelude.gql [82799B] main/input.gql [5648B] main/relation.gql [1952B] \nI0427 14:51:08.201609   32566 load.go:109] Finished reloading\n"}}
+[debug] [2026-04-27T11:51:18.179Z] I0427 14:51:18.179603   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:51:18.179603   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:51:18.184Z] E0427 14:51:18.183975   32566 load.go:73] Could not load sources: 
+Errors: schema/schema.gql:10:6: OBJECT Skill: must define one or more fields.
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:51:18.183975   32566 load.go:73] Could not load sources: \nErrors: schema/schema.gql:10:6: OBJECT Skill: must define one or more fields.\n"}}
+[debug] [2026-04-27T11:51:18.186Z] I0427 14:51:18.185556   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [82799B] main/input.gql [5648B] main/relation.gql [1952B] main/query.gql [1175B] main/mutation.gql [3149B] 
+I0427 14:51:18.185605   32566 load.go:74] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:51:18.185556   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [82799B] main/input.gql [5648B] main/relation.gql [1952B] main/query.gql [1175B] main/mutation.gql [3149B] \nI0427 14:51:18.185605   32566 load.go:74] Finished reloading\n"}}
+[debug] [2026-04-27T11:51:28.172Z] I0427 14:51:28.171877   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:51:28.171877   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:51:28.176Z] E0427 14:51:28.176053   32566 load.go:73] Could not load sources: 
+Errors: schema/schema.gql:10:6: On Skill @table(key): Reference a nullable field: id
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:51:28.176053   32566 load.go:73] Could not load sources: \nErrors: schema/schema.gql:10:6: On Skill @table(key): Reference a nullable field: id\n"}}
+[debug] [2026-04-27T11:51:28.179Z] I0427 14:51:28.178589   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: main/relation.gql [1952B] main/query.gql [1175B] main/mutation.gql [3149B] prelude.gql [82799B] main/input.gql [5648B] 
+I0427 14:51:28.178651   32566 load.go:74] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:51:28.178589   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: main/relation.gql [1952B] main/query.gql [1175B] main/mutation.gql [3149B] prelude.gql [82799B] main/input.gql [5648B] \nI0427 14:51:28.178651   32566 load.go:74] Finished reloading\n"}}
+[debug] [2026-04-27T11:51:38.180Z] I0427 14:51:38.180622   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:51:38.180622   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:51:38.186Z] E0427 14:51:38.186151   32566 load.go:73] Could not load sources: 
+Errors: schema/schema.gql:11:5: On Skill.id @default: One of the default args must be specified
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:51:38.186151   32566 load.go:73] Could not load sources: \nErrors: schema/schema.gql:11:5: On Skill.id @default: One of the default args must be specified\n"}}
+[debug] [2026-04-27T11:51:38.188Z] I0427 14:51:38.188413   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [82799B] main/input.gql [5648B] main/relation.gql [1952B] main/query.gql [1175B] main/mutation.gql [3149B] 
+I0427 14:51:38.188470   32566 load.go:74] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:51:38.188413   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [82799B] main/input.gql [5648B] main/relation.gql [1952B] main/query.gql [1175B] main/mutation.gql [3149B] \nI0427 14:51:38.188470   32566 load.go:74] Finished reloading\n"}}
+[debug] [2026-04-27T11:52:28.172Z] I0427 14:52:28.171999   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:52:28.171999   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:52:28.180Z] I0427 14:52:28.179922   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 4246] UpdateResources(): done
+Main schema: sources: schema/schema.gql [226B] 
+Connector "example": sources: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:52:28.179922   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 4246] UpdateResources(): done\nMain schema: sources: schema/schema.gql [226B] \nConnector \"example\": sources: \n"}}
+[debug] [2026-04-27T11:52:28.187Z] E0427 14:52:28.187003   32566 load.go:95] Errors generating SDK: [connector "example"]: invalid Data Connect Connector no query found in connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:52:28.187003   32566 load.go:95] Errors generating SDK: [connector \"example\"]: invalid Data Connect Connector no query found in connector\n"}}
+[debug] [2026-04-27T11:52:28.189Z] I0427 14:52:28.189430   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [82799B] main/mutation.gql [6444B] main/input.gql [9186B] main/relation.gql [2790B] main/query.gql [2404B] 
+I0427 14:52:28.189488   32566 load.go:109] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:52:28.189430   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [82799B] main/mutation.gql [6444B] main/input.gql [9186B] main/relation.gql [2790B] main/query.gql [2404B] \nI0427 14:52:28.189488   32566 load.go:109] Finished reloading\n"}}
+[debug] [2026-04-27T11:52:38.180Z] I0427 14:52:38.180658   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:52:38.180658   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:52:38.189Z] I0427 14:52:38.189051   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 85be] UpdateResources(): done
+Main schema: sources: schema/schema.gql [227B] 
+Connector "example": sources: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:52:38.189051   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 85be] UpdateResources(): done\nMain schema: sources: schema/schema.gql [227B] \nConnector \"example\": sources: \n"}}
+[debug] [2026-04-27T11:52:38.199Z] E0427 14:52:38.198988   32566 load.go:95] Errors generating SDK: [connector "example"]: invalid Data Connect Connector no query found in connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:52:38.198988   32566 load.go:95] Errors generating SDK: [connector \"example\"]: invalid Data Connect Connector no query found in connector\n"}}
+[debug] [2026-04-27T11:52:38.202Z] I0427 14:52:38.201462   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [82799B] main/relation.gql [2790B] main/query.gql [2404B] main/mutation.gql [6444B] main/input.gql [9186B] 
+I0427 14:52:38.201514   32566 load.go:109] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:52:38.201462   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [82799B] main/relation.gql [2790B] main/query.gql [2404B] main/mutation.gql [6444B] main/input.gql [9186B] \nI0427 14:52:38.201514   32566 load.go:109] Finished reloading\n"}}
+[debug] [2026-04-27T11:52:48.177Z] I0427 14:52:48.177257   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:52:48.177257   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:52:48.181Z] E0427 14:52:48.180837   32566 load.go:73] Could not load sources: 
+Errors: schema/schema.gql:17:1: Expected Name, found }
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:52:48.180837   32566 load.go:73] Could not load sources: \nErrors: schema/schema.gql:17:1: Expected Name, found }\n"}}
+[debug] [2026-04-27T11:52:48.183Z] I0427 14:52:48.183415   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: main/query.gql [2404B] main/mutation.gql [6444B] main/input.gql [9186B] main/relation.gql [2790B] prelude.gql [82799B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:52:48.183415   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: main/query.gql [2404B] main/mutation.gql [6444B] main/input.gql [9186B] main/relation.gql [2790B] prelude.gql [82799B] \n"}}
+[debug] [2026-04-27T11:52:48.186Z] I0427 14:52:48.183491   32566 load.go:74] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:52:48.183491   32566 load.go:74] Finished reloading\n"}}
+[debug] [2026-04-27T11:52:58.171Z] I0427 14:52:58.171459   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:52:58.171459   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:52:58.180Z] I0427 14:52:58.180396   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 5f7f] UpdateResources(): done
+Main schema: sources: schema/schema.gql [291B] 
+Connector "example": sources: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:52:58.180396   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 5f7f] UpdateResources(): done\nMain schema: sources: schema/schema.gql [291B] \nConnector \"example\": sources: \n"}}
+[debug] [2026-04-27T11:52:58.187Z] E0427 14:52:58.187234   32566 load.go:95] Errors generating SDK: [connector "example"]: invalid Data Connect Connector no query found in connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:52:58.187234   32566 load.go:95] Errors generating SDK: [connector \"example\"]: invalid Data Connect Connector no query found in connector\n"}}
+[debug] [2026-04-27T11:52:58.191Z] I0427 14:52:58.189870   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [82799B] main/input.gql [10377B] main/relation.gql [3981B] main/query.gql [2404B] main/mutation.gql [6444B] main/implicit.gql [266B] 
+I0427 14:52:58.189933   32566 load.go:109] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:52:58.189870   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [82799B] main/input.gql [10377B] main/relation.gql [3981B] main/query.gql [2404B] main/mutation.gql [6444B] main/implicit.gql [266B] \nI0427 14:52:58.189933   32566 load.go:109] Finished reloading\n"}}
+[debug] [2026-04-27T11:53:08.171Z] I0427 14:53:08.171757   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:08.171757   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:53:08.175Z] E0427 14:53:08.175426   32566 load.go:73] Could not load sources: 
+Errors: schema/schema.gql:20:1: Expected Name, found }
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:53:08.175426   32566 load.go:73] Could not load sources: \nErrors: schema/schema.gql:20:1: Expected Name, found }\n"}}
+[debug] [2026-04-27T11:53:08.178Z] I0427 14:53:08.178714   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [82799B] main/implicit.gql [266B] main/input.gql [10377B] main/relation.gql [3981B] main/query.gql [2404B] main/mutation.gql [6444B] 
+I0427 14:53:08.178817   32566 load.go:74] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:08.178714   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [82799B] main/implicit.gql [266B] main/input.gql [10377B] main/relation.gql [3981B] main/query.gql [2404B] main/mutation.gql [6444B] \nI0427 14:53:08.178817   32566 load.go:74] Finished reloading\n"}}
+[debug] [2026-04-27T11:53:18.181Z] I0427 14:53:18.181319   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:18.181319   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:53:18.185Z] E0427 14:53:18.184972   32566 load.go:73] Could not load sources: 
+Errors: schema/schema.gql:21:1: Expected :, found }
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:53:18.184972   32566 load.go:73] Could not load sources: \nErrors: schema/schema.gql:21:1: Expected :, found }\n"}}
+[debug] [2026-04-27T11:53:18.187Z] I0427 14:53:18.186776   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [82799B] main/implicit.gql [266B] main/input.gql [10377B] main/relation.gql [3981B] main/query.gql [2404B] main/mutation.gql [6444B] 
+I0427 14:53:18.186828   32566 load.go:74] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:18.186776   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [82799B] main/implicit.gql [266B] main/input.gql [10377B] main/relation.gql [3981B] main/query.gql [2404B] main/mutation.gql [6444B] \nI0427 14:53:18.186828   32566 load.go:74] Finished reloading\n"}}
+[debug] [2026-04-27T11:53:28.173Z] I0427 14:53:28.172764   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:28.172764   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:53:28.181Z] I0427 14:53:28.180868   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 068b] UpdateResources(): done
+Main schema: sources: schema/schema.gql [378B] 
+Connector "example": sources: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:28.180868   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 068b] UpdateResources(): done\nMain schema: sources: schema/schema.gql [378B] \nConnector \"example\": sources: \n"}}
+[debug] [2026-04-27T11:53:28.190Z] E0427 14:53:28.190558   32566 load.go:95] Errors generating SDK: [connector "example"]: invalid Data Connect Connector no query found in connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:53:28.190558   32566 load.go:95] Errors generating SDK: [connector \"example\"]: invalid Data Connect Connector no query found in connector\n"}}
+[debug] [2026-04-27T11:53:28.196Z] I0427 14:53:28.193435   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: main/query.gql [2404B] main/mutation.gql [6444B] prelude.gql [82799B] main/implicit.gql [266B] main/input.gql [12155B] main/relation.gql [4725B] 
+I0427 14:53:28.193512   32566 load.go:109] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:28.193435   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: main/query.gql [2404B] main/mutation.gql [6444B] prelude.gql [82799B] main/implicit.gql [266B] main/input.gql [12155B] main/relation.gql [4725B] \nI0427 14:53:28.193512   32566 load.go:109] Finished reloading\n"}}
+[debug] [2026-04-27T11:53:38.179Z] I0427 14:53:38.179564   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:38.179564   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:53:38.186Z] I0427 14:53:38.186687   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 22f6] UpdateResources(): done
+Main schema: sources: schema/schema.gql [432B] 
+Connector "example": sources: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:38.186687   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 22f6] UpdateResources(): done\nMain schema: sources: schema/schema.gql [432B] \nConnector \"example\": sources: \n"}}
+[debug] [2026-04-27T11:53:38.197Z] E0427 14:53:38.197233   32566 load.go:95] Errors generating SDK: [connector "example"]: invalid Data Connect Connector no query found in connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:53:38.197233   32566 load.go:95] Errors generating SDK: [connector \"example\"]: invalid Data Connect Connector no query found in connector\n"}}
+[debug] [2026-04-27T11:53:38.200Z] I0427 14:53:38.200034   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: main/input.gql [13685B] prelude.gql [82799B] main/relation.gql [5499B] main/query.gql [2404B] main/mutation.gql [6444B] main/implicit.gql [266B] 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:38.200034   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: main/input.gql [13685B] prelude.gql [82799B] main/relation.gql [5499B] main/query.gql [2404B] main/mutation.gql [6444B] main/implicit.gql [266B] \n"}}
+[debug] [2026-04-27T11:53:38.202Z] I0427 14:53:38.200241   32566 load.go:109] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:38.200241   32566 load.go:109] Finished reloading\n"}}
+[debug] [2026-04-27T11:53:48.174Z] I0427 14:53:48.173950   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:48.173950   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:53:48.187Z] I0427 14:53:48.187391   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 7ceb] UpdateResources(): done
+Main schema: sources: schema/schema.gql [474B] 
+Connector "example": sources: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:48.187391   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 7ceb] UpdateResources(): done\nMain schema: sources: schema/schema.gql [474B] \nConnector \"example\": sources: \n"}}
+[debug] [2026-04-27T11:53:48.198Z] E0427 14:53:48.197804   32566 load.go:95] Errors generating SDK: [connector "example"]: invalid Data Connect Connector no query found in connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:53:48.197804   32566 load.go:95] Errors generating SDK: [connector \"example\"]: invalid Data Connect Connector no query found in connector\n"}}
+[debug] [2026-04-27T11:53:48.200Z] I0427 14:53:48.200512   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: main/mutation.gql [6444B] main/implicit.gql [266B] prelude.gql [82799B] main/input.gql [14437B] main/relation.gql [5883B] main/query.gql [2404B] 
+I0427 14:53:48.200561   32566 load.go:109] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:48.200512   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: main/mutation.gql [6444B] main/implicit.gql [266B] prelude.gql [82799B] main/input.gql [14437B] main/relation.gql [5883B] main/query.gql [2404B] \nI0427 14:53:48.200561   32566 load.go:109] Finished reloading\n"}}
+[debug] [2026-04-27T11:53:58.171Z] I0427 14:53:58.171478   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:58.171478   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:53:58.175Z] E0427 14:53:58.175824   32566 load.go:73] Could not load sources: 
+Errors: schema/schema.gql:29:1: Expected Name, found }
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:53:58.175824   32566 load.go:73] Could not load sources: \nErrors: schema/schema.gql:29:1: Expected Name, found }\n"}}
+[debug] [2026-04-27T11:53:58.180Z] I0427 14:53:58.180023   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: prelude.gql [82799B] main/relation.gql [5883B] main/query.gql [2404B] main/mutation.gql [6444B] main/implicit.gql [266B] main/input.gql [14437B] 
+I0427 14:53:58.180084   32566 load.go:74] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:53:58.180023   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: prelude.gql [82799B] main/relation.gql [5883B] main/query.gql [2404B] main/mutation.gql [6444B] main/implicit.gql [266B] main/input.gql [14437B] \nI0427 14:53:58.180084   32566 load.go:74] Finished reloading\n"}}
+[debug] [2026-04-27T11:54:08.179Z] I0427 14:54:08.179561   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:54:08.179561   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:54:08.193Z] I0427 14:54:08.193403   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 1b1c] UpdateResources(): done
+Main schema: sources: schema/schema.gql [494B] 
+Connector "example": sources: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:54:08.193403   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 1b1c] UpdateResources(): done\nMain schema: sources: schema/schema.gql [494B] \nConnector \"example\": sources: \n"}}
+[debug] [2026-04-27T11:54:08.209Z] E0427 14:54:08.209193   32566 load.go:95] Errors generating SDK: [connector "example"]: invalid Data Connect Connector no query found in connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:54:08.209193   32566 load.go:95] Errors generating SDK: [connector \"example\"]: invalid Data Connect Connector no query found in connector\n"}}
+[debug] [2026-04-27T11:54:08.212Z] I0427 14:54:08.211996   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: main/input.gql [16020B] main/relation.gql [6578B] main/query.gql [2404B] main/mutation.gql [6444B] prelude.gql [82799B] main/implicit.gql [266B] 
+I0427 14:54:08.212058   32566 load.go:109] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:54:08.211996   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: main/input.gql [16020B] main/relation.gql [6578B] main/query.gql [2404B] main/mutation.gql [6444B] prelude.gql [82799B] main/implicit.gql [266B] \nI0427 14:54:08.212058   32566 load.go:109] Finished reloading\n"}}
+[debug] [2026-04-27T11:54:18.181Z] I0427 14:54:18.180915   32566 load.go:31] Reloading schema and connectors...
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:54:18.180915   32566 load.go:31] Reloading schema and connectors...\n"}}
+[debug] [2026-04-27T11:54:18.205Z] I0427 14:54:18.205333   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 0cfa] UpdateResources(): done
+Main schema: sources: schema/schema.gql [526B] 
+Connector "example": sources: 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:54:18.205333   32566 control.go:100] [projects/emulator/locations/emulator/services/skilld-6f651-service 0cfa] UpdateResources(): done\nMain schema: sources: schema/schema.gql [526B] \nConnector \"example\": sources: \n"}}
+[debug] [2026-04-27T11:54:18.222Z] E0427 14:54:18.221384   32566 load.go:95] Errors generating SDK: [connector "example"]: invalid Data Connect Connector no query found in connector
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 14:54:18.221384   32566 load.go:95] Errors generating SDK: [connector \"example\"]: invalid Data Connect Connector no query found in connector\n"}}
+[debug] [2026-04-27T11:54:18.224Z] I0427 14:54:18.224336   32566 collector.go:107] schema extensions wrote into "/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema"
+Generated sources: main/input.gql [16026B] main/relation.gql [6578B] main/query.gql [2404B] main/mutation.gql [6444B] prelude.gql [82799B] main/implicit.gql [266B] 
+I0427 14:54:18.224406   32566 load.go:109] Finished reloading
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:54:18.224336   32566 collector.go:107] schema extensions wrote into \"/home/harry/WebstormProjects/skilld/skilld/dataconnect/.dataconnect/schema\"\nGenerated sources: main/input.gql [16026B] main/relation.gql [6578B] main/query.gql [2404B] main/mutation.gql [6444B] prelude.gql [82799B] main/implicit.gql [266B] \nI0427 14:54:18.224406   32566 load.go:109] Finished reloading\n"}}
+[debug] [2026-04-27T11:55:17.407Z] I0427 14:55:17.407293   32566 engine.go:209] [projects/emulator/locations/emulator/services/skilld-6f651-service 0cfa] ExecuteGraphqlRead query IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:55:17.407293   32566 engine.go:209] [projects/emulator/locations/emulator/services/skilld-6f651-service 0cfa] ExecuteGraphqlRead query IntrospectionQuery: succeeded. \n"}}
+[debug] [2026-04-27T11:55:28.262Z] I0427 14:55:28.261853   32566 engine.go:209] [projects/emulator/locations/emulator/services/skilld-6f651-service 0cfa] ExecuteGraphqlRead query IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:55:28.261853   32566 engine.go:209] [projects/emulator/locations/emulator/services/skilld-6f651-service 0cfa] ExecuteGraphqlRead query IntrospectionQuery: succeeded. \n"}}
+[debug] [2026-04-27T11:55:39.760Z] I0427 14:55:39.760076   32566 engine.go:209] [projects/emulator/locations/emulator/services/skilld-6f651-service 0cfa] ExecuteGraphqlRead query IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 14:55:39.760076   32566 engine.go:209] [projects/emulator/locations/emulator/services/skilld-6f651-service 0cfa] ExecuteGraphqlRead query IntrospectionQuery: succeeded. \n"}}
+[debug] [2026-04-27T12:03:33.450Z] I0427 15:03:33.449463   32566 engine.go:209] [projects/emulator/locations/emulator/services/skilld-6f651-service 0cfa] ExecuteGraphqlRead query IntrospectionQuery: succeeded. 
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"I0427 15:03:33.449463   32566 engine.go:209] [projects/emulator/locations/emulator/services/skilld-6f651-service 0cfa] ExecuteGraphqlRead query IntrospectionQuery: succeeded. \n"}}
+[error] [Firebase Plugin] Failed to find GQL files: Error: ENOENT: no such file or directory, scandir ''
+[info] [Firebase Plugin] ExecuteGraphQL (https://firebasedataconnect.googleapis.com) request: {
+    "variables": {},
+    "query": "# This is a file for you to write an un-named mutation. \n# Only one un-named mutation is allowed per file.\nmutation {\n  user_insert(data: {clerkId: \"user_3CrVUbl0Pjeg5ziAvOhaJg6DUOq\", email: \"zitaharryn@gmail.com\", imageUrl: \"https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zQ3JWVWRxUlJvSHoyTFc3M3FHS0kyWFNlNm8ifQ\", username: \"zitaharry\"})\n}",
+    "extensions": {}
+}
+[debug] [2026-04-27T12:14:30.269Z] Checked if tokens are valid: true, expires at: 1777293833544
+[debug] [2026-04-27T12:14:30.273Z] >>> [apiv2][query] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql [none]
+[debug] [2026-04-27T12:14:30.277Z] >>> [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql {"variables":{},"query":"# This is a file for you to write an un-named mutation. \n# Only one un-named mutation is allowed per file.\nmutation {\n  user_insert(data: {clerkId: \"user_3CrVUbl0Pjeg5ziAvOhaJg6DUOq\", email: \"zitaharryn@gmail.com\", imageUrl: \"https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zQ3JWVWRxUlJvSHoyTFc3M3FHS0kyWFNlNm8ifQ\", username: \"zitaharry\"})\n}","extensions":{}}
+[debug] [2026-04-27T12:14:32.609Z] <<< [apiv2][status] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql 200
+[debug] [2026-04-27T12:14:32.612Z] <<< [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql {"data":{"user_insert":{"clerkId":"user_3CrVUbl0Pjeg5ziAvOhaJg6DUOq"}}}
+[error] [Firebase Plugin] Failed to find GQL files: Error: ENOENT: no such file or directory, scandir ''
+[info] [Firebase Plugin] ExecuteGraphQL (https://firebasedataconnect.googleapis.com) request: {
+    "variables": {},
+    "query": "# This is a file for you to write an un-named mutation. \n# Only one un-named mutation is allowed per file.\nmutation {\n  skill_insert(\n    data: {id: \"11111111222233334444555555555558\", authorClerkId: \"user_3CrVUbl0Pjeg5ziAvOhaJg6DUOq\", createdAt: \"2026-04-27T11:55:28.330Z\", description:       \"Generate clean TypeScript snippets and scaffold common app patterns.\",\n, installCommand: \"npx skild add write-code\", promptConfig: \"You are a professional optimization engineer\", tags: [\"ai-agent\", \"engineering\"], title: \"Write Code\", usageExample: \"Review the code and optimize it\"}\n  )\n}",
+    "extensions": {}
+}
+[debug] [2026-04-27T12:19:26.271Z] Checked if tokens are valid: true, expires at: 1777293833544
+[debug] [2026-04-27T12:19:26.276Z] >>> [apiv2][query] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql [none]
+[debug] [2026-04-27T12:19:26.279Z] >>> [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql {"variables":{},"query":"# This is a file for you to write an un-named mutation. \n# Only one un-named mutation is allowed per file.\nmutation {\n  skill_insert(\n    data: {id: \"11111111222233334444555555555558\", authorClerkId: \"user_3CrVUbl0Pjeg5ziAvOhaJg6DUOq\", createdAt: \"2026-04-27T11:55:28.330Z\", description:       \"Generate clean TypeScript snippets and scaffold common app patterns.\",\n, installCommand: \"npx skild add write-code\", promptConfig: \"You are a professional optimization engineer\", tags: [\"ai-agent\", \"engineering\"], title: \"Write Code\", usageExample: \"Review the code and optimize it\"}\n  )\n}","extensions":{}}
+[debug] [2026-04-27T12:19:28.437Z] <<< [apiv2][status] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql 200
+[debug] [2026-04-27T12:19:28.438Z] <<< [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql {"data":{"skill_insert":{"id":"11111111222233334444555555555558"}}}
+[error] [Firebase Plugin] Failed to find GQL files: Error: ENOENT: no such file or directory, scandir ''
+[info] [Firebase Plugin] ExecuteGraphQL (https://firebasedataconnect.googleapis.com) request: {
+    "variables": {},
+    "query": "\n# This is a file for you to write an un-named query.\n# Only one un-named query is allowed per file.\nquery {\n  users{\n    clerkId\n    email\n    username\n    imageUrl\n  }\n}",
+    "extensions": {}
+}
+[debug] [2026-04-27T12:19:48.992Z] Checked if tokens are valid: true, expires at: 1777293833544
+[debug] [2026-04-27T12:19:48.996Z] >>> [apiv2][query] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql [none]
+[debug] [2026-04-27T12:19:48.998Z] >>> [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql {"variables":{},"query":"\n# This is a file for you to write an un-named query.\n# Only one un-named query is allowed per file.\nquery {\n  users{\n    clerkId\n    email\n    username\n    imageUrl\n  }\n}","extensions":{}}
+[debug] [2026-04-27T12:19:50.638Z] <<< [apiv2][status] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql 200
+[debug] [2026-04-27T12:19:50.639Z] <<< [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql {"data":{"users":[{"email":"zitaharryn@gmail.com","username":"zitaharry","imageUrl":"https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zQ3JWVWRxUlJvSHoyTFc3M3FHS0kyWFNlNm8ifQ","clerkId":"user_3CrVUbl0Pjeg5ziAvOhaJg6DUOq"}]}}
+[error] [Firebase Plugin] Failed to find GQL files: Error: ENOENT: no such file or directory, scandir ''
+[info] [Firebase Plugin] ExecuteGraphQL (https://firebasedataconnect.googleapis.com) request: {
+    "variables": {},
+    "query": "\n# This is a file for you to write an un-named query.\n# Only one un-named query is allowed per file.\nquery {\n  skills{\n    author {\n      clerkId\n      email\n      username\n      imageUrl\n    }\n    title\n    description\n    tags\n    installCommand\n    promptConfig\n    usageExample\n    createdAt\n  }\n}",
+    "extensions": {}
+}
+[debug] [2026-04-27T12:19:57.564Z] Checked if tokens are valid: true, expires at: 1777293833544
+[debug] [2026-04-27T12:19:57.567Z] >>> [apiv2][query] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql [none]
+[debug] [2026-04-27T12:19:57.570Z] >>> [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql {"variables":{},"query":"\n# This is a file for you to write an un-named query.\n# Only one un-named query is allowed per file.\nquery {\n  skills{\n    author {\n      clerkId\n      email\n      username\n      imageUrl\n    }\n    title\n    description\n    tags\n    installCommand\n    promptConfig\n    usageExample\n    createdAt\n  }\n}","extensions":{}}
+[debug] [2026-04-27T12:19:59.160Z] <<< [apiv2][status] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql 200
+[debug] [2026-04-27T12:19:59.163Z] <<< [apiv2][body] POST https://firebasedataconnect.googleapis.com/v1/projects/skilld-6f651/locations/us-east4/services/skilld-6f651-service:executeGraphql {"data":{"skills":[{"usageExample":"Review the code and optimize it","createdAt":"2026-04-27T11:55:28.330000Z","author":{"clerkId":"user_3CrVUbl0Pjeg5ziAvOhaJg6DUOq","email":"zitaharryn@gmail.com","username":"zitaharry","imageUrl":"https://img.clerk.com/eyJ0eXBlIjoicHJveHkiLCJzcmMiOiJodHRwczovL2ltYWdlcy5jbGVyay5kZXYvb2F1dGhfZ29vZ2xlL2ltZ18zQ3JWVWRxUlJvSHoyTFc3M3FHS0kyWFNlNm8ifQ"},"title":"Write Code","description":"Generate clean TypeScript snippets and scaffold common app patterns.","tags":["ai-agent","engineering"],"installCommand":"npx skild add write-code","promptConfig":"You are a professional optimization engineer"}]}}
+[debug] [2026-04-27T12:31:28.171Z] E0427 15:31:28.171682   32566 watch.go:40] Failed to load config from "/home/harry/WebstormProjects/skilld/skilld/dataconnect": could not find dataconnect.yaml in `/home/harry/WebstormProjects/skilld/skilld/dataconnect`
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 15:31:28.171682   32566 watch.go:40] Failed to load config from \"/home/harry/WebstormProjects/skilld/skilld/dataconnect\": could not find dataconnect.yaml in `/home/harry/WebstormProjects/skilld/skilld/dataconnect`\n"}}
+[debug] [2026-04-27T12:31:38.180Z] E0427 15:31:38.180281   32566 watch.go:40] Failed to load config from "/home/harry/WebstormProjects/skilld/skilld/dataconnect": could not find dataconnect.yaml in `/home/harry/WebstormProjects/skilld/skilld/dataconnect`
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 15:31:38.180281   32566 watch.go:40] Failed to load config from \"/home/harry/WebstormProjects/skilld/skilld/dataconnect\": could not find dataconnect.yaml in `/home/harry/WebstormProjects/skilld/skilld/dataconnect`\n"}}
+[debug] [2026-04-27T12:31:48.180Z] E0427 15:31:48.180438   32566 watch.go:40] Failed to load config from "/home/harry/WebstormProjects/skilld/skilld/dataconnect": could not find dataconnect.yaml in `/home/harry/WebstormProjects/skilld/skilld/dataconnect`
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 15:31:48.180438   32566 watch.go:40] Failed to load config from \"/home/harry/WebstormProjects/skilld/skilld/dataconnect\": could not find dataconnect.yaml in `/home/harry/WebstormProjects/skilld/skilld/dataconnect`\n"}}
+[debug] [2026-04-27T12:31:58.172Z] E0427 15:31:58.171892   32566 watch.go:40] Failed to load config from "/home/harry/WebstormProjects/skilld/skilld/dataconnect": could not find dataconnect.yaml in `/home/harry/WebstormProjects/skilld/skilld/dataconnect`
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 15:31:58.171892   32566 watch.go:40] Failed to load config from \"/home/harry/WebstormProjects/skilld/skilld/dataconnect\": could not find dataconnect.yaml in `/home/harry/WebstormProjects/skilld/skilld/dataconnect`\n"}}
+[debug] [2026-04-27T12:32:08.180Z] E0427 15:32:08.180309   32566 watch.go:40] Failed to load config from "/home/harry/WebstormProjects/skilld/skilld/dataconnect": could not find dataconnect.yaml in `/home/harry/WebstormProjects/skilld/skilld/dataconnect`
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 15:32:08.180309   32566 watch.go:40] Failed to load config from \"/home/harry/WebstormProjects/skilld/skilld/dataconnect\": could not find dataconnect.yaml in `/home/harry/WebstormProjects/skilld/skilld/dataconnect`\n"}}
+[debug] [2026-04-27T12:32:18.180Z] E0427 15:32:18.180285   32566 watch.go:40] Failed to load config from "/home/harry/WebstormProjects/skilld/skilld/dataconnect": could not find dataconnect.yaml in `/home/harry/WebstormProjects/skilld/skilld/dataconnect`
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 15:32:18.180285   32566 watch.go:40] Failed to load config from \"/home/harry/WebstormProjects/skilld/skilld/dataconnect\": could not find dataconnect.yaml in `/home/harry/WebstormProjects/skilld/skilld/dataconnect`\n"}}
+[debug] [2026-04-27T12:32:28.171Z] E0427 15:32:28.171601   32566 watch.go:40] Failed to load config from "/home/harry/WebstormProjects/skilld/skilld/dataconnect": could not find dataconnect.yaml in `/home/harry/WebstormProjects/skilld/skilld/dataconnect`
+ {"metadata":{"emulator":{"name":"dataconnect"},"message":"E0427 15:32:28.171601   32566 watch.go:40] Failed to load config from \"/home/harry/WebstormProjects/skilld/skilld/dataconnect\": could not find dataconnect.yaml in `/home/harry/WebstormProjects/skilld/skilld/dataconnect`\n"}}
