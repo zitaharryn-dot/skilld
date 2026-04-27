@@ -28,6 +28,7 @@
     "@tanstack/router-plugin": "^1.132.0",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "firebase-tools": "^15.15.0",
     "lucide-react": "^0.577.0",
     "prettier": "^3.8.3",
     "radix-ui": "^1.4.3",
